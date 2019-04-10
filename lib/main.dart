@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: true ? AppBar(
+        appBar: AppBar(
           title: Text('Instagram', style: TextStyle(color: Colors.black),),
           backgroundColor: Color(0xddffffff),
           elevation: 2,
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
               onPressed: (){},
             )
           ],
-        ) : null,
+        ),
         body: ListView(
           children: <Widget>[
             Container(
